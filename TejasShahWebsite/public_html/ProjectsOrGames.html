@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+       <head>
+              <title>ProjectsOrGames</title>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <style type = "text/css">
+                   #car 
+                   {
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+                        overflow: hidden;
+                        background-color: gray;
+                   }
+                   #cat 
+                   {
+                        float: left;
+                   }
+                   #cat a, .dropbtn  
+                   {
+                        display: block;
+                        color: white;
+                        text-align: center;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                   }
+
+                   #cat a:hover:not(.active), .dropdown:hover .dropbtn 
+                   {
+                        background-color: lightsalmon;
+                   }
+
+                   li.dropdown 
+                   {
+                        display: inline-block;
+                   }
+                   
+                   .active 
+                   {
+                        background-color: lightgreen;
+                   }
+                   
+                   .dropdown-content 
+                   {
+                        display: none;
+                        position: absolute;
+                        background-color: #f9f9f9;
+                        min-width: 160px;
+                        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                        z-index: 1;
+                   }
+
+                   .dropdown-content a 
+                   {
+                        color: black;
+                        padding: 12px 16px;
+                        text-decoration: none;
+                        display: block;
+                        text-align: left;
+                   }
+
+                   .dropdown-content a:hover 
+                   {
+                       background-color: orange
+                   }
+
+                   .dropdown:hover .dropdown-content 
+                   {
+                        display: block;
+                   }
+              </style>
+       </head>
+       <body>
+           <ul id="car">
+                <li id="cat"><a href="index.html">Home</a></li>
+                <li id="cat"><a href="TejasResume.html">Resume</a></li>
+                <li class="dropdown"><a href="javascript:void(0)" class="dropbtn" style="background-color:lightgreen">ProjectsOrGames</a>
+                <div class="dropdown-content">
+                    <a href="ProjectsOrGames.html" class="active">All</a>
+                    <a href="Android.html">Android</a>
+                    <a href="iOS.html">iOS</a>
+                    <a href="Java.html">Java</a>
+                    <a href="HTMLProjects.html">HTML</a>
+    </div></li>
+           </ul>
+              <div><h1 style="text-align: center">Projects or Games</h1></div>
+              <h3 style="text-align: center">I have made some projects, and you can click on All to look at all projects, or if you want<br>
+              to look at my projects separately (like just Java) then click on Java in ProjectsOrGames dropdown.
+              </h3>
+              <br><br>
+              <p>Here are the projects I have made:
+  <UL id="proj">
+         <li><a href="https://github.com/Cards4Li5e/FinalProject" target="_blank">Fire-Water-Grass</a><br>
+         <div id="blackText">It is like rock-paper-scissors. I like this app because it was the first 
+             time I use  AI command. I used Xcode in Spring 2016, using Swift.</div></li> 
+         <li id="blackText"><a href="https://github.com/TejasShahWeberState/SmartMedsProjects" style="color:blue" target="_blank">SmartMedsGroupProject</a><br>
+         <div id="blackText">This was a group project. You could search a pill from an API by autoname, imprint, shape, or color. 
+             You can also check to see if the medicines you take can have harmful interactions with other medicine.</div></li>
+             <li id="blackText"><a href="https://github.com/TejasShahWeberState/TejasHangDroid-master" style="colr:blue" target="_blank">HangDroid</a><br>
+                 <div id="blackText">This was my final project when I took my first Android class, in 2015. I liked how my single-player was going. It only works up to API 25.</div></li>    
+  </UL>
+       </body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+       <head>
+              <title>My WebSite</title>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <style type = "text/css">
+                   #clockbox
+                   {
+                        text-align: center;                           
+                        margin: 150px;                            
+                        font-size: 50px;
+                   }
+                   ul 
+                   {
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+                        overflow: hidden;
+                        background-color: gray;
+                   }
+                   li 
+                   {
+                        float: left;
+                   }
+                   li a, .dropbtn 
+                   {
+                        display: block;
+                        color: white;
+                        text-align: center;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                   }
+
+                   li a:hover:not(.active), .dropdown:hover .dropbtn 
+                   {
+                        background-color: lightsalmon;
+                   }
+
+                   li.dropdown 
+                   {
+                        display: inline-block;
+                   }
+                   
+                   .active 
+                   {
+                        background-color: lightgreen
+                   }
+                   .dropdown-content 
+                   {
+                        display: none;
+                        position: absolute;
+                        background-color: #f9f9f9;
+                        min-width: 160px;
+                        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                        z-index: 1;
+                   }
+
+                   .dropdown-content a 
+                   {
+                        color: black;
+                        padding: 12px 16px;
+                        text-decoration: none;
+                        display: block;
+                        text-align: left;
+                   }
+
+                   .dropdown-content a:hover 
+                   {
+                       background-color: orange
+                   }
+
+                   .dropdown:hover .dropdown-content 
+                   {
+                        display: block;
+                    }
+              </style>
+       </head>
+       <body>
+           <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="TejasResume.html">Resume</a></li>
+                <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">ProjectsOrGames</a>
+                <div class="dropdown-content">
+                    <a href="ProjectsOrGames.html">All</a>
+                    <a href="Android.html">Android</a>
+                    <a href="iOS.html">iOS</a>
+                    <a href="Java.html">Java</a>
+                    <a href="HTMLProjects.html">HTML</a>
+    </div></li>
+           </ul>
+             
+              <div><h1 style="text-align: center">The Website of Tejas Shah</h1></div>
+              <div><h2 style="text-align: center"><i> Welcome to my Website. This is a work in progress.                            
+                            </i></h2></div>
+              <p align="center">Hello, this is Tejas Shah. I am 23 years old and I am about to 
+                     graduate from Weber State, with a Bachelor of Computer Science degree.</p>
+              <br><br><br><br>
+
+              <!--  http://www.ricocheting.com/code/javascript/html-generator/date-time-clock           -->
+              <!-- Got the date, day, time, and year from the website above-->
+              <script type="text/javascript">
+                     tday = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday",
+                     "Friday", "Saturday");
+                     tmonth = new Array("January", "February", "March", "April", "May", "June",
+                     "July", "August",
+                             "September", "October", "November", "December");
+
+                     function GetClock() {
+                            var d = new Date();
+                            var nday = d.getDay();
+                            var nmonth = d.getMonth();
+                            var ndate = d.getDate();
+                            var nyear = d.getFullYear();
+                            var nhour = d.getHours();
+                            var nmin = d.getMinutes();
+                            var nsec = d.getSeconds();
+                            if (nmin <= 9)
+                                   nmin = "0" + nmin
+                            if (nsec <= 9)
+                                   nsec = "0" + nsec;
+
+                            document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] 
+           + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ":" + nsec + "";
+                     }
+
+                     window.onload = function () {
+                            GetClock();
+                            setInterval(GetClock, 1000);
+                     }
+              </script>
+              <div id="clockbox"></div>
+
+
+
+       </body>
+</html>
