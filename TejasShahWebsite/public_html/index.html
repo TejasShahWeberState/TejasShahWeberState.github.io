@@ -10,7 +10,7 @@ and open the template in the editor.
               <meta charset="UTF-8">
               <meta name="viewport" content="width=device-width, initial-scale=1.0">
               <style type = "text/css">
-                   #clockbox
+                   #clockbox, #clockbox2
                    {
                         text-align: center;                           
                         margin: 150px;                            
@@ -78,7 +78,11 @@ and open the template in the editor.
                    .dropdown:hover .dropdown-content 
                    {
                         display: block;
-                    }
+                   }
+                   div.button
+                   {
+                      text-align: center;
+                   }
               </style>
        </head>
        <body>
@@ -121,22 +125,84 @@ and open the template in the editor.
                             var nmin = d.getMinutes();
                             var nsec = d.getSeconds();
                             if (nmin <= 9)
-                                   nmin = "0" + nmin
+                                   nmin = "0" + nmin;
                             if (nsec <= 9)
                                    nsec = "0" + nsec;
 
                             document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] 
            + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ":" + nsec + "";
+   
+                            if(tmonth[nmonth] === "January")
+                            {
+                                document.body.style.backgroundColor = "yellowgreen";
+                            }
+                            
+                            if(tmonth[nmonth] === "February")
+                            {
+                                document.body.style.backgroundColor = "lightred";
+                            }
+   
+                            if(tmonth[nmonth] === "March")
+                            {
+                                document.body.style.backgroundColor = "lightorange";
+                            }
+                            
+                            if(tmonth[nmonth] === "April")
+                            {
+                                document.body.style.backgroundColor = "lightblue";
+                            }
+                            
+                            if(tmonth[nmonth] === "May")
+                            {
+                                document.body.style.backgroundColor = "orchid";
+                            }
+                            
+                            if(tmonth[nmonth] === "June")
+                            {
+                                document.body.style.backgroundColor = "lightgoldenrodyellow";
+                            }
+                            
+                            if(tmonth[nmonth] === "July")
+                            {
+                                document.body.style.backgroundColor = "lightcyan";
+                            }
+                            
+                            if(tmonth[nmonth] === "August")
+                            {
+                                document.body.style.backgroundColor = "lightpink";
+                            }
+                            
+                            if(tmonth[nmonth] === "September")
+                            {
+                                document.body.style.backgroundColor = "plum";
+                            }
+                            
+                            if(tmonth[nmonth] === "October")
+                            {
+                                document.body.style.backgroundColor = "lightorange";
+                            }
+   
+                            if(tmonth[nmonth] === "November")
+                            {
+                                document.body.style.backgroundColor = "sandybrown";
+                            }
+                            
+                            if(tmonth[nmonth] === "December")
+                            {
+                                document.body.style.backgroundColor = "lightgreen";
+                            }
+
                      }
 
-                     window.onload = function () {
+                     window.onload = function () 
+                     {
                             GetClock();
                             setInterval(GetClock, 1000);
-                     }
+                     };
               </script>
               <div id="clockbox"></div>
-
-
+              <br><br/>
+              <br><br/>
 
        </body>
 </html>
