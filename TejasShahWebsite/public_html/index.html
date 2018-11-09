@@ -189,6 +189,14 @@ and open the template in the editor.
                             {
                                 document.body.style.backgroundColor = "lightgreen";
                             }
+                            
+                            if(tmonth[nmonth] === "February" && ndate === 17)
+                            {
+                                var message = "Happy Birthday, Tejas Shah";
+                                
+                                document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] 
+           + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ":" + nsec + "<br><br>" + message;
+                            }
 
                      }
 
