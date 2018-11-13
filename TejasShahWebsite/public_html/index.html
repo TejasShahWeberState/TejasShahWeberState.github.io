@@ -86,6 +86,7 @@ and open the template in the editor.
            <ul>
                 <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="TejasResume.html">Resume</a></li>
+                <li><a href="SLCCEport.html">SLCC E-Port</a></li>
                 <li><a href="Sports.html">Sports</a></li>
                 <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">ProjectsOrGames</a>
                 <div class="dropdown-content">
@@ -138,12 +139,12 @@ and open the template in the editor.
                             
                             if(tmonth[nmonth] === "February")
                             {
-                                document.body.style.backgroundColor = "lightred";
+                                document.body.style.backgroundColor = "lightpink";
                             }
    
                             if(tmonth[nmonth] === "March")
                             {
-                                document.body.style.backgroundColor = "lightorange";
+                                document.body.style.backgroundColor = "lightgreen";
                             }
                             
                             if(tmonth[nmonth] === "April")
@@ -168,7 +169,7 @@ and open the template in the editor.
                             
                             if(tmonth[nmonth] === "August")
                             {
-                                document.body.style.backgroundColor = "lightpink";
+                                document.body.style.backgroundColor = "lightyellow";
                             }
                             
                             if(tmonth[nmonth] === "September")
@@ -188,7 +189,7 @@ and open the template in the editor.
                             
                             if(tmonth[nmonth] === "December")
                             {
-                                document.body.style.backgroundColor = "lightgreen";
+                                document.body.style.backgroundColor = "lightred";
                             }
                             
                             if(tmonth[nmonth] === "February" && ndate === 17)
@@ -262,6 +263,48 @@ and open the template in the editor.
                                 document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] 
            + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ":" + nsec + "<br><br>" + message;
                             }
+                            
+                            if(tmonth[nmonth] === "January" && ndate === 1)
+                            {
+                                var message = "Happy New Year!";
+                                
+                                document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] 
+           + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ":" + nsec + "<br><br>" + message;
+                            }
+                            
+                            if(tmonth[nmonth] === "December" && ndate === 31)
+                            {
+                                var message = "New Year's Eve";
+                                
+                                document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] 
+           + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ":" + nsec + "<br><br>" + message;
+                            }
+                            
+                            if(tmonth[nmonth] === "December" && ndate === 24)
+                            {
+                                var message = "Christmas Eve";
+                                
+                                document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] 
+           + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ":" + nsec + "<br><br>" + message;
+                            }
+                            
+                            if(tmonth[nmonth] === "March" && ndate === 17)
+                            {
+                                var message = "St. Patrick's Day";
+                                
+                                document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] 
+           + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ":" + nsec + "<br><br>" + message;
+                            }
+                            
+                            if(tmonth[nmonth] === "April" && ndate === 1)
+                            {
+                                var message = "April Fools";
+                                
+                                document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] 
+           + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ":" + nsec + "<br><br>" + message;
+                            }
+                            
+                            
 
                      }
 
