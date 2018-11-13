@@ -86,6 +86,7 @@ and open the template in the editor.
            <ul>
                 <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="TejasResume.html">Resume</a></li>
+                <li><a href="Sports.html">Sports</a></li>
                 <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">ProjectsOrGames</a>
                 <div class="dropdown-content">
                     <a href="ProjectsOrGames.html">All</a>
@@ -93,8 +94,7 @@ and open the template in the editor.
                     <a href="iOS.html">iOS</a>
                     <a href="Java.html">Java</a>
                     <a href="HTMLProjects.html">HTML</a>
-    </div></li>
-                <li><a href="Sports.html">Sports</a></li>
+    </div></li>                
                 <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Video Games</a>
            </ul>
              
@@ -194,6 +194,70 @@ and open the template in the editor.
                             if(tmonth[nmonth] === "February" && ndate === 17)
                             {
                                 var message = "Happy Birthday, Tejas Shah";
+                                
+                                document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] 
+           + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ":" + nsec + "<br><br>" + message;
+                            }
+                            
+                            if(tmonth[nmonth] === "December" && ndate === 25)
+                            {
+                                var message = "Merry Christmas!";
+                                
+                                document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] 
+           + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ":" + nsec + "<br><br>" + message;
+                            }
+                            
+                            if(tmonth[nmonth] === "October" && ndate === 31)
+                            {
+                                var message = "Happy Halloween!";
+                                
+                                document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] 
+           + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ":" + nsec + "<br><br>" + message;
+                            }
+                            
+                            if(tmonth[nmonth] === "February" && ndate === 29)
+                            {
+                                var message = "Leap Year";
+                                
+                                document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] 
+           + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ":" + nsec + "<br><br>" + message;
+                            }
+                            
+                            if(tmonth[nmonth] === "March" && ndate === 14)
+                            {
+                                var message = "Pi Day";
+                                
+                                document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] 
+           + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ":" + nsec + "<br><br>" + message;
+                            }
+                            
+                            if(tmonth[nmonth] === "May" && ndate === 4)
+                            {
+                                var message = "May the 4th be with you!";
+                                
+                                document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] 
+           + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ":" + nsec + "<br><br>" + message;
+                            }
+                            
+                            if(tmonth[nmonth] === "July" && ndate === 4)
+                            {
+                                var message = "Happy Independence Day";
+                                
+                                document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] 
+           + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ":" + nsec + "<br><br>" + message;
+                            }
+                            
+                            if(tmonth[nmonth] === "July" && ndate === 24)
+                            {
+                                var message = "Happy Pioneer Day";
+                                
+                                document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] 
+           + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ":" + nsec + "<br><br>" + message;
+                            }
+                            
+                            if(tmonth[nmonth] === "May" && ndate === 5)
+                            {
+                                var message = "Cinco de Mayo";
                                 
                                 document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] 
            + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ":" + nsec + "<br><br>" + message;
