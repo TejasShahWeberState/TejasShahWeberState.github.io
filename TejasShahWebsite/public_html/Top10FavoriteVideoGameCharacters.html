@@ -81,6 +81,21 @@ and open the template in the editor.
                         margin-left: auto;
                         margin-right: auto;
                    }
+                   #demo
+                   {
+                       color: blue;
+                   }
+                   ol
+                   {
+                       font-size:1.5em;
+                       font-weight: bold;
+                       
+                   }
+                   p.char
+                   {
+                       font-size: 20px;
+                       font-weight: normal;
+                   }
               </style>
        </head>
        <body>
@@ -88,7 +103,6 @@ and open the template in the editor.
                 <li id="cat"><a href="index.html">Home</a></li>
                 <li id="cat"><a href="TejasResume.html">Resume</a></li>
                 <li id="cat"><a href="SLCCEport.html">SLCC E-Port</a></li>
-                <li id="cat"><a href="Sports.html">Sports</a></li>
                 <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">ProjectsOrGames</a>
                 <div class="dropdown-content">
                     <a href="ProjectsOrGames.html">All</a>
@@ -102,33 +116,37 @@ and open the template in the editor.
                      <a href="Top10FavoriteVideoGames.html">Top 10 Favorite Video Games</a>
                      <a href="Top10FavoriteVideoGameCharacters.html" class="active">Top 10 Favorite Characters</a>  
                    </div>
+               <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Sports</a>
+                    <div class="dropdown-content">
+                        <a href="MyFavoriteSportsTeam.html">My Favorite Sports Team</a>
+                        <a href="Top10ProfessionalSportsLogo.html">My Top 10 Favorite Professional Sports Logo</a>    
+                    </div>      
            </ul>
               <div><h1 style="text-align: center">Video Games Characters</h1></div>
               <h3 style="text-align: center">
                       Top 10 Favorite Video Game Characters
               </h3>
               <br><br>
-              <p>Video Games are my favorite hobby, so here are my top 10 favorite characters (from 10-1):
+              <p style="text-align: center">Video Games are my favorite hobby, so here are my top 10 favorite characters (from 10-1):
 <!--                  As of right now, I only have 4 characters-->
-  <OL id="proj" reversed>
-      <li>
-          <h2 style="text-align: center">Luigi</h2>
+  <OL reversed >
+      <li >
+          <h3 style="text-align: left">Luigi</h3>
           <img src="Pictures/Luigi.jpg" alt="Luigi" width="500" height="600" id='nondup'>
-          <p style="text-align: center">
+          <p style="text-align: center" class="char"> 
               Unlike most of the Nintendo characters, my first time playing as Luigi was not in a Smash Bros. series,
               but in Super Mario Bros. 2, on the NES. He was the best jumper in that game, even though I never beat
               that game. But every game that I have played that has Yoshi (outside of Super Mario World 2 Yoshi's
               Island), Luigi is in that game as well. In Super Smash Bros. 64, he had a fiery jump, and honestly,
               a lot better than Mario in that game. In other Super Smash games, he would use Green Missile 
               (headbutt and possibly fiery headbutt) for dangerous damage. In Mario Superstar Baseball, his high 
-              jumping leads to magical jumping, and he is good/great everywhere in the game. He, like Yoshi has
-              always been there for me whenever I needed it.<br><br>
-          </p></li>
+              jumping leads to magical jumping, and he is good/great everywhere in the game. <br><br>
+              </p></li>
       
       <li>
-          <h2 style="text-align: center">Captain Falcon</h2>
+          <h3 style="text-align: left">Captain Falcon</h3>
           <img src="Pictures/CaptainFalcon.jpg" alt="Captain Falcon" width="500" height="600" id='nondup'>
-          <p style="text-align: center">
+          <p style="text-align: center" class="char">
            This a character that I first knew threw Smash Bros. 64, and he is always one of a few characters I love
            to use in mnay Smash games. Shame that I have never played an F-Zero game (outside of demo of SNES 
            version), but even without playing those games, I have always had such fond memories playing as him
@@ -145,9 +163,9 @@ and open the template in the editor.
           </p></li>
       
       <li>
-          <h2 style="text-align: center">Ness</h2>
+          <h3 style="text-align: left">Ness</h3>
           <img src="Pictures/Ness.jpg" alt="Ness" width="500" height="600" id='nondup'>
-          <p style="text-align: center">
+          <p style="text-align: center" class="char">
           Another character where I first played or known him from Super Smash Bros. on the Nintendo 64. However,
           he is one of my main in Super Smash Bros. 64, Melee, and Wii U. I find his movesets to be interesting
           because he never learns PSI Fire (he calls it PK instead of PSI) or Thunder in Earthbound. It took me
@@ -160,10 +178,11 @@ and open the template in the editor.
           don't play Earthbound for the gameplay (I think it is fine) or story. Play it for the adventure, 
           the music, the traits, etc.!
           </p></li>
+      
       <li>
-          <h2 style="text-align: center">Yoshi</h2>
+          <h3 style="text-align: left">Yoshi</h3>
           <img src="Pictures/Yoshi.jpg" alt="Yoshi" width="500" height="600" id='nondup'>
-          <p style="text-align: center">
+          <p style="text-align: center" class="char">
           Is there anything I can say about my favorite Nintendo character? The first time I remember
           playing as Yoshi was on Super Smash Bros. on the Nintendo 64, like most of my favorite 
           Nintendo characters. While he might not be the best fighter, this green dinosaur ends up being
@@ -174,6 +193,37 @@ and open the template in the editor.
           fielding. Whenever I needed someone to step up in the clutch, Yoshi has always been their for me.<br><br>
           
           </p></li>
+      
+      <li>
+          <h3 style="text-align: left">Psaro(Necrosaro in NES version)</h3>
+<!--          <img src="Pictures/Psaro.jpg" alt="Psaro" width="500" height="600" id='nondup'>-->
+          <p style="text-align: center" id='demo' class="char">
+          Talking about Psaro would be spoilers
+          </p></li>
   </OL>
+        <script>
+            document.getElementById("demo").addEventListener("click", myFunction);
+
+            function myFunction() 
+            {
+                document.getElementById("demo").style.color = "black";
+                document.getElementById("demo").innerHTML = "Psaro is my third favorite Dragon Quest character, " +
+                "and like most Dragon Quest games, he is an awesome " +
+                "villain. In the NES version, he is the final boss, in the DS Version, he is not the final boss. " +
+                "In fact, after a few events in the DS version, Psaro joins the team, and he instantly becomes " +
+                "the best team member in the game. Psaro learns a majority of spells that other teams members can " +
+                "use, and also learns new ones as well. He can also equipped cursed items, while not being cursed " +
+                "himself. The cursed item gives him a ton of attack and defense help. You have to have him as one " +
+                "4 members walking overworld to beat the final boss. " + "<br>" + "<br>" +
+                "Psaro is a very interesting demon, and for awhile, a very smart villain. It is mentioned that " +
+                "Psaro wants to kill the hero/heroin before he/she gets strong enough to beat Psaro. In Chapter 5, " +
+                "Psaro destroys a town that the hero/heroin live in, meaning that he/she start the adventure on their own. Psaro has " +
+                "serious hatred of humans, but he is kind to other beings, like other monsters, dwarves, and " +
+                "even elves. He falls in love with an elf named Rose, and he tells Rose he wants to destroy " +
+                "humans, even with Rose telling him not to." + "<br>" + "<br>" +
+                "Psaro is my favorite villain of all time, and I totally wish for him to be in Smash series, " +
+                "either as a boss, or as a playable character. "
+            }
+</script>
        </body>
 </html>

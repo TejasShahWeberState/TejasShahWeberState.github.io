@@ -5,5 +5,13 @@
         <data xmlns="http://www.netbeans.org/ns/clientside-project/1">
             <name>TejasShahWebsite</name>
         </data>
+        <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+            <word>GBC</word>
+            <word>isn</word>
+            <word>NES</word>
+            <word>outclasses</word>
+            <word>stat</word>
+            <word>stats</word>
+        </spellchecker-wordlist>
     </configuration>
 </project>
