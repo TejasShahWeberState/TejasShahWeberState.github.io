@@ -84,6 +84,7 @@ and open the template in the editor.
                    #demo
                    {
                        color: blue;
+                       font-size: 50px;
                    }
                    ol
                    {
@@ -91,11 +92,29 @@ and open the template in the editor.
                        font-weight: bold;
                        
                    }
+                   #demo2
+                   {
+                       color: red;
+                       display: block;
+                       margin-left: auto;
+                       margin-right: auto;
+                       font-size: 50px;
+                       font-weight: normal;
+                       
+                   }
                    p.char
                    {
                        font-size: 20px;
                        font-weight: normal;
                    }
+                   #nondup2
+                   {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        text-align: center;
+                   }
+                   
               </style>
        </head>
        <body>
@@ -184,7 +203,7 @@ and open the template in the editor.
           <br><br> 
           </p></li>
       
-      <li>
+      <li></li>
       <li>
           <h3 style="text-align: left">Ness</h3>
           <img src="Pictures/Ness.jpg" alt="Ness" width="500" height="600" id='nondup'>
@@ -219,7 +238,11 @@ and open the template in the editor.
       
       <li>
           <h3 style="text-align: left">Psaro(Necrosaro in NES version)</h3>
-<!--          <img src="Pictures/Psaro.jpg" alt="Psaro" width="500" height="600" id='nondup'>-->
+           <button  id='demo2' onclick="myFunction2">
+           Spoilers: pictures of Psaro
+           </button>
+          <p id="myDIV" class='char'></p>
+          <img id="nondup2" src="Pictures/Psaro1.png" style="display:none;" alt="Psaro" width="300" height="200">
           <p style="text-align: center" id='demo' class="char">
           Talking about Psaro would be spoilers
           </p></li>
@@ -265,10 +288,12 @@ and open the template in the editor.
   </OL>
         <script>
             document.getElementById("demo").addEventListener("click", myFunction);
+            
 
             function myFunction() 
             {
                 document.getElementById("demo").style.color = "black";
+                document.getElementById("demo").style.fontSize = "20px";
                 document.getElementById("demo").innerHTML = "Psaro is my third favorite Dragon Quest character, " +
                 "and like most Dragon Quest games, he is an awesome " +
                 "villain. In the NES version, he is the final boss, in the DS Version, he is not the final boss. " +
@@ -285,6 +310,46 @@ and open the template in the editor.
                 "Psaro is my favorite villain of all time, and I totally wish for him to be in Smash series, " +
                 "either as a boss, or as a playable character. " + "<br>" + "<br>";
             }
+            
 </script>
+<script>
+            document.getElementById("demo2").addEventListener("click", myFunction2);
+            
+            
+
+                
+            function myFunction2()
+            {
+
+                document.getElementById('nondup2').style.display='block';
+                document.getElementById("myDIV").innerHTML = "This is Psaro's form on the NES version because he " + 
+              "looked so much cooler on the NES. I am surprised they were able to put the animations for him on " +
+              "the NES." + "<br>" + "<br>" + "<br>";
+                document.getElementById('demo2').style.display='none';
+                
+                var images = ["Pictures/Psaro1.png", "Pictures/Psaro2.png", "Pictures/Psaro3.png", 
+                "Pictures/Psaro4.png", "Pictures/Psaro5.png",
+                "Pictures/Psaro6.png", "Pictures/Psaro7.png", "Pictures/Psaro8.png"];
+
+                var imageNumber = 0;
+                setInterval (function(){
+                if (imageNumber === images.length)
+                {
+                    imageNumber = 0;
+                }
+                document.getElementById("nondup2").src = images[imageNumber];
+                imageNumber++;
+                } , 2500);
+
+                
+            }
+
+            
+
+            
+                
+            
+            
+</script>    
        </body>
 </html>
