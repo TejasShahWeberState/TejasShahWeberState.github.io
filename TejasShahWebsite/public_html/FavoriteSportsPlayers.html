@@ -5,12 +5,112 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+       <head>
+              <title>Professional Logos</title>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <style type = "text/css">
+                   #car 
+                   {
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+                        overflow: hidden;
+                        background-color: gray;
+                   }
+                   #cat 
+                   {
+                        float: left;
+                   }
+                   #cat a, .dropbtn  
+                   {
+                        display: block;
+                        color: white;
+                        text-align: center;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                   }
+
+                   #cat a:hover:not(.active), .dropdown:hover .dropbtn 
+                   {
+                        background-color: lightsalmon;
+                   }
+
+                   li.dropdown 
+                   {
+                        display: inline-block;
+                   }
+                   
+                   .active 
+                   {
+                        background-color: lightgreen;
+                   }
+                   
+                   .dropdown-content 
+                   {
+                        display: none;
+                        position: absolute;
+                        background-color: #f9f9f9;
+                        min-width: 160px;
+                        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                        z-index: 1;
+                   }
+
+                   .dropdown-content a 
+                   {
+                        color: black;
+                        padding: 12px 16px;
+                        text-decoration: none;
+                        display: block;
+                        text-align: left;
+                   }
+
+                   .dropdown-content a:hover 
+                   {
+                       background-color: orange
+                   }
+
+                   .dropdown:hover .dropdown-content 
+                   {
+                        display: block;
+                   }
+              </style>
+       </head>
+       <body>
+           <ul id="car">
+                <li id="cat"><a href="index.html">Home</a></li>
+                <li id="cat"><a href="TejasResume.html">Resume</a></li>
+                <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">School/Universities</a>
+                    <div class="dropdown-content">
+                        <a href="SLCCEport.html">SLCC E-Port</a>
+                        <a href="FavoriteClasses.html">My Favorite Classes</a>    
+                    </div></li>  
+                <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">ProjectsOrGames</a>
+                <div class="dropdown-content">
+                    <a href="ProjectsOrGames.html">All</a>
+                    <a href="Android.html">Android</a>
+                    <a href="iOS.html">iOS</a>
+                    <a href="Java.html">Java</a>
+                    <a href="HTMLProjects.html">HTML</a>
+    </div></li>
+                <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Video Games</a>
+                    <div class="dropdown-content">
+                     <a href="Top10FavoriteVideoGames.html">Top 10 Favorite Video Games</a>   
+                     <a href="Top10FavoriteVideoGameCharacters.html">Top 10 Favorite Characters</a>  
+                   </div>
+                <li class="dropdown"><a href="javascript:void(0)" class="dropbtn" style="background-color:lightgreen">Sports</a>
+                    <div class="dropdown-content">
+                        <a href="MyFavoriteSportsTeam.html">My Favorite Sports Team</a>
+                        <a href="Top10ProfessionalSportsLogo.html" class="active">My Top 10 Favorite Professional Sports Logo</a>    
+                        <a href="FavoriteSportsPlayers.html">Favorite Sports Players</a>
+                    </div>      
+           </ul>
+              <div><h1 style="text-align: center">Sports Players</h1></div>
+              <h3 style="text-align: center">
+                      Favorite
+              </h3>
+              <br><br>
+              <p>Here are my Favorite Sports players (excluding players who have played on the teams I root for):
+  
+       </body>
 </html>
