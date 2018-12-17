@@ -79,7 +79,27 @@ and open the template in the editor.
                    {
                         display: block;
                    }
-                   
+                   #nondup2
+                   {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        text-align: center;
+                   }
+                   #left
+                   {
+                       float: left;
+                       margin-left: auto;
+                       margin-right: auto;
+                       display: block;
+                   }
+                   #right
+                   {
+                       float: right;
+                       margin-left: auto;
+                       margin-right: auto;
+                       display: block;
+                   }
               </style>
        </head>
        <body>
@@ -118,8 +138,11 @@ and open the template in the editor.
                             </i></h2></div>
               <p align="center">Hello, this is Tejas Shah. I graduated from Weber State,
                   with a Bachelor of Computer Science degree. I work at Amazon as an Amazon Warehouse Associate.</p>
-              <br><br><br><br>
-
+              <br>
+               <img id="left" src="Pictures/c1.jpg"  alt="Christmas" style="display:none;" width="189" height="252" >
+               <img id="right" src="Pictures/c2.jpg"  alt="Christmas" style="display:none;" width="189" height="252">
+               <br><br><br><br><br><br><br>
+<!--               style="display:none;-->
               <!--  http://www.ricocheting.com/code/javascript/html-generator/date-time-clock           -->
               <!-- Got the date, day, time, and year from the website above-->
               <script type="text/javascript">
@@ -220,7 +243,12 @@ and open the template in the editor.
                                 
                                 document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] 
            + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ":" + nsec + "<br><br>" + message;
+   
+                                document.getElementById('left').style.display = 'visible'
+                                document.getElementById('right').style.display='visible';
                             }
+                            
+                            
                             
                             if(tmonth[nmonth] === "October" && ndate === 31)
                             {
@@ -284,6 +312,9 @@ and open the template in the editor.
                                 
                                 document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] 
            + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ":" + nsec + "<br><br>" + message;
+   
+                                document.getElementById('left').style.display = 'visible'
+                                document.getElementById('right').style.display='visible';
                             }
                             
                             if(tmonth[nmonth] === "December" && ndate === 31)
@@ -292,6 +323,9 @@ and open the template in the editor.
                                 
                                 document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] 
            + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ":" + nsec + "<br><br>" + message;
+   
+                                document.getElementById('left').style.display = 'visible'
+                                document.getElementById('right').style.display='visible';
                             }
                             
                             if(tmonth[nmonth] === "December" && ndate === 24)
@@ -300,6 +334,9 @@ and open the template in the editor.
                                 
                                 document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] 
            + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ":" + nsec + "<br><br>" + message;
+   
+                                document.getElementById('left').style.display = 'visible'
+                                document.getElementById('right').style.display='visible';
                             }
                             
                             if(tmonth[nmonth] === "March" && ndate === 17)
