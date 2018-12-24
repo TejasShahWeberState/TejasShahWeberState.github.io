@@ -139,8 +139,9 @@ and open the template in the editor.
               <p align="center">Hello, this is Tejas Shah. I graduated from Weber State,
                   with a Bachelor of Computer Science degree. I work at Amazon as an Amazon Warehouse Associate.</p>
               <br>
-               <img id="left" src="Pictures/c1.jpg"  alt="Christmas" style="display:none;" width="189" height="252" >
-               <img id="right" src="Pictures/c2.jpg"  alt="Christmas" style="display:none;" width="189" height="252">
+              
+               <img id="left" src="Pictures/c1.jpg"  alt="Christmas" style="display:none;" name="thePicture" width="189" height="252" >
+               <img id="right" src="Pictures/c2.jpg"  alt="Christmas" style="display:none;" name="thePicture2" width="189" height="252">
                <br><br><br><br><br><br><br>
 <!--               style="display:none;-->
               <!--  http://www.ricocheting.com/code/javascript/html-generator/date-time-clock           -->
@@ -244,8 +245,8 @@ and open the template in the editor.
                                 document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] 
            + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ":" + nsec + "<br><br>" + message;
    
-                                document.getElementById('left').style.display = 'visible'
-                                document.getElementById('right').style.display='visible';
+                                document.getElementById('left').style.display='block';
+                                document.getElementById('right').style.display='block';
                             }
                             
                             
@@ -313,8 +314,8 @@ and open the template in the editor.
                                 document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] 
            + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ":" + nsec + "<br><br>" + message;
    
-                                document.getElementById('left').style.display = 'visible'
-                                document.getElementById('right').style.display='visible';
+                                document.getElementById('left').style.display='block';
+                                document.getElementById('right').style.display='block';
                             }
                             
                             if(tmonth[nmonth] === "December" && ndate === 31)
@@ -324,8 +325,8 @@ and open the template in the editor.
                                 document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] 
            + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ":" + nsec + "<br><br>" + message;
    
-                                document.getElementById('left').style.display = 'visible'
-                                document.getElementById('right').style.display='visible';
+                                document.getElementById('left').style.display='block';
+                                document.getElementById('right').style.display='block';
                             }
                             
                             if(tmonth[nmonth] === "December" && ndate === 24)
@@ -335,8 +336,9 @@ and open the template in the editor.
                                 document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] 
            + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ":" + nsec + "<br><br>" + message;
    
-                                document.getElementById('left').style.display = 'visible'
-                                document.getElementById('right').style.display='visible';
+                                document.getElementById('left').style.display='block';
+                                document.getElementById('right').style.display='block';
+                                
                             }
                             
                             if(tmonth[nmonth] === "March" && ndate === 17)
