@@ -100,9 +100,29 @@ and open the template in the editor.
                        margin-right: auto;
                        display: block;
                    }
+                   #shadow
+                   {
+                       text-shadow: 5px 5px 10px gray;
+                   }
+                   .fade 
+                   {
+                        opacity: 1;
+                        animation: fadeIn 10s ease;
+                   }
+                   @keyframes fadeIn
+                   {
+                        0%
+                        {
+                            opacity: 0;
+                        }
+                        100%
+                        {
+                            opacity: 1;
+                        }
+                    }
               </style>
        </head>
-       <body>
+       <body class="fade">
            <ul>
                 <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="TejasResume.html">Resume</a></li>
@@ -132,7 +152,7 @@ and open the template in the editor.
            </ul>
            
              
-              <div><h1 style="text-align: center">The Website of Tejas Shah</h1></div>
+              <div><h1 style="text-align: center" id="shadow">The Website of Tejas Shah</h1></div>
               <div><h2 style="text-align: center"><i> Welcome to my Website. This is a work in progress.                            
                             </i></h2></div>
               <p align="center">Hello, this is Tejas Shah. I graduated from Weber State,
